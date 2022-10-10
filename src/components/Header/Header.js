@@ -50,7 +50,7 @@ const Header = () => {
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
-                <p>Statistics</p>
+                <p className="text-bold">Statistics</p>
                 <p className='absolute bottom-5 left-9'>{}</p>
               </div>
             </Link>
@@ -63,7 +63,7 @@ const Header = () => {
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
-                <p>Blog</p>
+                <p className="text-bold">Blog</p>
                 <p className='absolute bottom-5 left-9'>{}</p>
               </div>
             </Link>
@@ -162,7 +162,7 @@ const Header = () => {
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         <div className='relative py-3'>
-                          <p>Statistics</p>
+                          <p className="text-bold">Statistics</p>
                           <p className='absolute bottom-5 left-9'>
                             {/* {cart.length} */}
                           </p>
@@ -177,7 +177,7 @@ const Header = () => {
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         <div className='relative py-3'>
-                          <p>Blog</p>
+                          <p className="text-bold">Blog</p>
                           <p className='absolute bottom-5 left-9'>
                             {/* {cart.length} */}
                           </p>
