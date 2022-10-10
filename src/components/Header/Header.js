@@ -35,8 +35,8 @@ const Header = () => {
           <li>
             <Link
               to='/quiz'
-              aria-label='Shop'
-              title='Shop'
+              aria-label='Quiz'
+              title='Quiz'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
             Quiz
@@ -44,9 +44,9 @@ const Header = () => {
           </li>
           <li>
             <Link
-              to='/cart'
-              aria-label='Cart'
-              title='Cart'
+              to='/statistics'
+              aria-label='Statistics'
+              title='Statistics'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
@@ -58,8 +58,8 @@ const Header = () => {
           <li>
             <Link
               to='/blog'
-              aria-label='Cart'
-              title='Cart'
+              aria-label='Blog'
+              title='Blog'
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
@@ -157,8 +157,8 @@ const Header = () => {
                     <li>
                       <Link
                         to='/statistics'
-                        aria-label='Cart'
-                        title='Cart'
+                        aria-label='Statistics'
+                        title='Statistics'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         <div className='relative py-3'>
@@ -172,8 +172,8 @@ const Header = () => {
                     <li>
                       <Link
                         to='/blog'
-                        aria-label='Cart'
-                        title='Cart'
+                        aria-label='Blog'
+                        title='Blog'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                         <div className='relative py-3'>
