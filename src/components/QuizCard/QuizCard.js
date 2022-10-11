@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const QuizCard = ({course}) => {
     const {id,logo,name,total} = course;
@@ -52,7 +53,9 @@ const QuizCard = ({course}) => {
 			</p>
            <div className='flex justify-between pt-4'>
            <h2 className='text-xl'>Total Quizs : {total}</h2>
-			<button type="button" class="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Start Quiz</button>
+			<Link to={`/quiz${id}`}
+           type="button" className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 shadow-lg shadow-red-500/50 dark:shadow-lg dark:shadow-red-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Start Quiz
+            </Link>
            
            </div>
 		</div>
