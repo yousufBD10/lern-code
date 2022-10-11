@@ -5,11 +5,14 @@ import ErrorPage from '../components/ErrorPage/ErrorPage'
 import Home from '../components/Home/Home'
 import Quiz from '../components/Quiz/Quiz'
 import QuizQuestions from '../components/QuizQuestions/QuizQuestions'
-import QuizCard from '../components/QuizCard/QuizCard'
+
 
 import Root from '../components/Root/Root'
 import Statistics from '../components/Statistics/Statistics'
 import { cartData, dynamicCartData } from '../components/Loader/loader'
+import Blog1 from '../components/Blog/Blog1'
+import Blog2 from '../components/Blog/Blog2'
+import Blog3 from '../components/Blog/Blog3'
 
 
 
@@ -43,6 +46,12 @@ const router = createBrowserRouter([
      element: <Blog></Blog>},
     { path: '/about',
      element:<About></About>},
+    { path: '/blog1',
+     element:<Blog1></Blog1>},
+    { path: '/blog2',
+     element:<Blog2></Blog2>},
+    { path: '/blog3',
+     element:<Blog3></Blog3>},
      
     ],
   },
