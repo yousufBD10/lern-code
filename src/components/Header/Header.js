@@ -11,13 +11,13 @@ const Header = () => {
       <div className='relative flex items-center justify-between'>
         <Link
           to='/'
-          aria-label='Smart Home'
+          aria-label='Lern Code'
           title='Lern Code'
           className='inline-flex items-center'
         >
-            <img src='../../../public/logo192.png'/>
+              <img className='w-16 ml-3 rounded-full' src={require("../../image/programming.png")} alt="" />
          
-          <span className='ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase'>
+          <span className='ml-2 text-3xl font-bold tracking-wide text-gray-800 uppercase'>
            Lern <span className='text-yellow-400'>Code</span>
           </span>
         </Link>
@@ -27,7 +27,7 @@ const Header = () => {
               to='/home'
               aria-label='Home'
               title='Home'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='text-2xl text-bold font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               Home
             </Link>
@@ -37,7 +37,7 @@ const Header = () => {
               to='/quiz'
               aria-label='Quiz'
               title='Quiz'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 text-2xl text-bold '
             >
             Quiz
             </Link>
@@ -50,7 +50,7 @@ const Header = () => {
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
-                <p className="text-bold">Statistics</p>
+                <p className="text-bold text-2xl text-bold ">Statistics</p>
                 <p className='absolute bottom-5 left-9'>{}</p>
               </div>
             </Link>
@@ -63,7 +63,7 @@ const Header = () => {
               className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
             >
               <div className='relative py-3'>
-                <p className="text-bold">Blog</p>
+                <p className="text-bold text-2xl text-bold ">Blog</p>
                 <p className='absolute bottom-5 left-9'>{}</p>
               </div>
             </Link>
@@ -74,7 +74,7 @@ const Header = () => {
               to='/about'
               aria-label='About Us'
               title='About Us'
-              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+              className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400 text-2xl text-bold '
             >
               About Us
             </Link>
@@ -146,9 +146,19 @@ const Header = () => {
                   <ul className='space-y-4'>
                     <li>
                       <Link
+                        to='/home'
+                        aria-label='home'
+                        title='home'
+                        className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                      >
+                      Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         to='/quiz'
-                        aria-label='Shop'
-                        title='Shop'
+                        aria-label='Quiz'
+                        title='Quiz'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
                       Quiz
@@ -164,7 +174,7 @@ const Header = () => {
                         <div className='relative py-3'>
                           <p className="text-bold">Statistics</p>
                           <p className='absolute bottom-5 left-9'>
-                            {/* {cart.length} */}
+                           
                           </p>
                         </div>
                       </Link>
@@ -179,7 +189,7 @@ const Header = () => {
                         <div className='relative py-3'>
                           <p className="text-bold">Blog</p>
                           <p className='absolute bottom-5 left-9'>
-                            {/* {cart.length} */}
+                         
                           </p>
                         </div>
                       </Link>
