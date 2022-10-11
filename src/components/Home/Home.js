@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    
       <div>
         <div className="container flex flex-col items-center px-4 py-16 pb-24 mx-auto text-center lg:pb-56 md:py-32 md:px-10 lg:px-32 text-gray-900">
           <h1 className="lg:text-7xl font-bold leading-none text-6xl xl:max-w-6xl text-gray-800">
@@ -33,10 +33,11 @@ const Home = () => {
               </button>
             </Link>
           </div>
+        <h2 className="text-2xl mt-4"> <span className=" text-3xl font-bold ">Used by 50 million+ people</span> around the world</h2>
         </div>
       </div>
    
-    </div>
+   
   );
 };
 
