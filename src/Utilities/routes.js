@@ -9,6 +9,7 @@ import QuizCard from '../components/QuizCard/QuizCard'
 
 import Root from '../components/Root/Root'
 import Statistics from '../components/Statistics/Statistics'
+import { cartData, dynamicCartData } from '../components/Loader/loader'
 
 
 
@@ -18,23 +19,23 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
    errorElement: <ErrorPage></ErrorPage>,
-  
+   loader: cartData,
     children: [
     { path: '/',
      element: <Home></Home>},
     { path: '/home',
      element: <Home></Home>},
-   
     { path: '/quiz',
-    loader:()=>{
-     return fetch("https://openapi.programming-hero.com/api/quiz")
-    },
-        
+    loader:cartData,
+    // ()=>{
+    //   return fetch("https://openapi.programming-hero.com/api/quiz")
+    //  } 
      element: <Quiz></Quiz>},
     { path: '/quiz:quizId',
-     loader: async({params})=>{
-        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
-     },
+     loader: dynamicCartData,
+    //  async({params})=>{
+    //     return fetch(`https://openapi.programming-hero.com/api/quiz/${params.quizId}`)
+    //  },
      element: <QuizQuestions></QuizQuestions>},
     { path: '/statistics',
      element: <Statistics></Statistics>},
