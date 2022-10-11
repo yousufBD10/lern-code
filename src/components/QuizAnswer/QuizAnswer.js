@@ -1,5 +1,6 @@
 
 import React from "react";
+import Swal from 'sweetalert2'
 
 const QuizAnswer = ({ questions }) => {
   const { correctAnswer, question, options } = questions;
@@ -7,10 +8,21 @@ const QuizAnswer = ({ questions }) => {
   
      
       if (correctAnswer === props) {
-        alert("correct");
+        Swal.fire({
+          icon: 'success',
+          title: 'Greate...',
+          text: 'Correct answer!',
+          
+        })
        
-      } else {
-        alert("wrong");
+      } 
+      else {
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Wrong answer!',
+          
+        })
       }
     
 
