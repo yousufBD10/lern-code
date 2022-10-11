@@ -3,6 +3,7 @@ import React from "react";
 import Swal from 'sweetalert2'
 
 const QuizAnswer = ({ questions }) => {
+  console.log(questions);
   const { correctAnswer, question, options } = questions;
   
   const handleanswer = (props) => {

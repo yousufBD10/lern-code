@@ -8,7 +8,7 @@ import { CartData } from "../Root/Root";
 
 const Home = () => {
   const quiz = useContext(CartData)
-  console.log(quiz);
+  
   return (
     
       <div>
