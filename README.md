@@ -2,10 +2,12 @@
 
 # Getting Started with Create React App
 
-# All feature here:
 
-# Type of site: Educational site.
-Lern topic JavaScript_
+# Type of site: 
+Educational site.
+# All feature here:
+Lern topic 
+* JavaScript,
 * Angular, 
 * React,
 * CSS,
