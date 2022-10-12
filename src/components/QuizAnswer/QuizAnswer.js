@@ -1,12 +1,12 @@
 
-import React from "react";
+import React, { useState } from "react";
 import Swal from 'sweetalert2'
-
+import {  EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 const QuizAnswer = ({ questions }) => {
   
-  console.log(questions);
   const { correctAnswer, question, options } = questions;
   
+  const [answer,setAnswer] = useState(false);
   const handleanswer = (props) => {
   
       if (correctAnswer === props) {
@@ -16,7 +16,6 @@ const QuizAnswer = ({ questions }) => {
           text: 'Correct answer!',
           
         })
-       
       } 
       else {
         Swal.fire({
@@ -26,9 +25,7 @@ const QuizAnswer = ({ questions }) => {
           
         })
       }
-    
-
-    
+  
   };
 
   return (
@@ -47,7 +44,16 @@ const QuizAnswer = ({ questions }) => {
       ))}
 
     </div>
-      <h2 className="ml-2 text-3xl font-medium text-gray-900 dark:text-gray-300">
+     
+      
+      <div className="flex justify-center  " onClick={()=> setAnswer(!answer)}> <h1 className="text-center text-2xl mr-6 font-bold ">Show correct answer</h1>
+
+        {
+          answer ? <EyeSlashIcon className=" w-8  icon"/> : <EyeIcon className=" w-8 icon"/>
+        }
+       
+      </div>
+      <h2 className={`ml-2 mt-5 text-3xl font-medium text-gray-900 ${answer ? answer : 'hidden'} dark:text-gray-300`}>
         Correct answer: {correctAnswer}
       </h2>
     </div>
