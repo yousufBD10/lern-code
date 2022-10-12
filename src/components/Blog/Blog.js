@@ -53,7 +53,7 @@ const Blog = () => {
                      text-xs
                      leading-loose
                      font-semibold
-                     text-white
+                    
                      mb-5
                      "
                      >
@@ -104,7 +104,7 @@ const Blog = () => {
                      text-xs
                      leading-loose
                      font-semibold
-                     text-white
+                    
                      mb-5
                      "
                      >
@@ -125,12 +125,12 @@ const Blog = () => {
                         hover:text-primary
                         "
                         >
-                    How does useRef hook work?
+                  How dose context api work?
                    </Link>
                   </h3>
                   <p className="text-base text-body-color">
                 
-The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly...
+                  The React Context API is a way for a React app to effectively produce global variables that can be passed around. This is the alternative to "prop drilling" or moving props from grandparent to child to parent, and so on. Context is also touted as an easier, lighter approach to...
                   </p>
                </div>
             </div>
@@ -156,7 +156,7 @@ The useRef Hook allows you to persist values between renders. It can be used to 
                      text-xs
                      leading-loose
                      font-semibold
-                     text-white
+                   
                      mb-5
                      "
                      >
