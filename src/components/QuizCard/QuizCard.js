@@ -5,7 +5,7 @@ const QuizCard = ({course}) => {
 	
     const {id,logo,name,total} = course;
     return (
-        <div className='my-16 mr-0'>
+        <div className='my-16 mr-0 '>
             <div className="rounded-md shadow-md lg:w-72 sm:w-full dark:bg-gray-900 bg-green-50 dark:text-slate-500">
 	
 	<img src={logo} alt="" className="object-cover border object-center w-full h-72 bg-slate-500  dark:bg-gray-500" />

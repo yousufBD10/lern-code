@@ -29,13 +29,13 @@ const QuizAnswer = ({ questions }) => {
   };
 
   return (
-    <div className=" m-6 shadow-lg bg-slate-50  lg:p-16">
+    <div className="p-4 m-6 shadow-lg bg-slate-50  lg:p-16">
       <h5 className="mb-2 lg:text-4xl font-bold  mb-16 tracking-tight  dark:text-white">
         {question}
       </h5>
       <div className="  bg-slate-50">
       {options.map((optionquestions) => (
-        <div className="flex justify-center " >
+        <div className="flex justify-center  " >
           <button   
             onClick={() => handleanswer(optionquestions)}
             className="ml-2 flex  justify-center hover:bg-sky-500 bg-blue-400 lg:w-2/4 rounded-md p-4 mb-4 lg:text-3xl font-medium text-black dark:text-gray-300"
@@ -53,7 +53,7 @@ const QuizAnswer = ({ questions }) => {
         }
        
       </div>
-      <div className="mt-8"><h2 className={`ml-2 mt-5 lg:text-3xl mt-16  font-medium text-gray-900 ${answer ? answer : 'hidden'} text-center p-2 rounded-md  inline  bg-green-500 dark:text-gray-300`}>
+      <div className="mt-6"><h2 className={`ml-2  lg:text-3xl mt-8  font-medium text-gray-900 ${answer ? answer : 'hidden'} text-center p-2 rounded-md  inline  bg-green-500 dark:text-gray-300`}>
         Correct answer: {correctAnswer}
       </h2></div>
     </div>
