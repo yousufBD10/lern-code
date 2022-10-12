@@ -1,4 +1,14 @@
+
+
 # Getting Started with Create React App
+
+All feature here:
+Type of site: Educational site.
+Lern topic JavaScript, Angular, React,CSS,Git,getsby,Svelte etc.
+
+API link : https://openapi.programming-hero.com/api/quiz
+dynamic api : https://openapi.programming-hero.com/api/quiz/${Id}
+live site : https://cute-alpaca-ddfaf7.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
