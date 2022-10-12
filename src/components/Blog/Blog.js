@@ -177,12 +177,11 @@ The useRef Hook allows you to persist values between renders. It can be used to 
                         hover:text-primary
                         "
                         >
-                     The no-fuss guide to upselling and cross selling
+                  How does useRef hook work?
                    </Link>
                   </h3>
                   <p className="text-base text-body-color">
-                     Lorem Ipsum is simply dummy text of the printing and
-                     typesetting industry.
+                  How does useRef hook work? The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated...
                   </p>
                </div>
             </div>

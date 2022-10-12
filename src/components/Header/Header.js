@@ -165,21 +165,18 @@ const Header = () => {
                       Quiz
                       </Link>
                     </li>
+                    
                     <li>
                       <Link
                         to='/statistics'
-                        aria-label='Statistics'
-                        title='Statistics'
+                        aria-label='statistics'
+                        title='statistics'
                         className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                       >
-                        <div className='relative py-3'>
-                          <p className="text-bold">Statistics</p>
-                          <p className='absolute bottom-5 left-9'>
-                           
-                          </p>
-                        </div>
+                      statistics
                       </Link>
                     </li>
+                    
                     <li>
                       <Link
                         to='/blog'
@@ -195,6 +192,10 @@ const Header = () => {
                         </div>
                       </Link>
                     </li>
+                    
+                    
+                      
+                     
                     <li>
                       
                       <Link

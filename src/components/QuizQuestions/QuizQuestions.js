@@ -10,7 +10,10 @@ const QuizQuestions = () => {
     // console.log(quiz.data.questions);
     return (
         <div className=' text-center'>
-          <h1 className='text-4xl font-bold mt-16 py-8  bg-slate-50'> Quiz of : {quiz.data.name}</h1>
+          <div className=' bg-slate-50'>
+          <h1 className='text-4xl font-bold mt-16 py-8 '> Quiz of  {quiz.data.name}</h1>
+          <h1 className='text-4xl font-bold '> Total : {quiz.data.total}</h1>
+          </div>
           {
             quiz.data.questions.map(questions => 
           
